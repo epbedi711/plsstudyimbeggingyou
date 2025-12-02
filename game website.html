@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>savaas realize</title>
+<style>
+body {
+font-family: sans-serif;
+background-color: #f0f0f0;
+margin: 0;
+padding: 20px;
+}
+.container {
+max-width: 1000px;
+margin: auto;
+}
+nav.game-nav a {
+display: inline-block;
+padding: 10px 15px;
+margin: 5px;
+background-color: #007bff;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+}
+.content-section {
+display: none; /* Hide all content sections by default */
+padding: 20px 0;
+}
+.game-iframe {
+width: 100%;
+height: 600px; /* Adjust height as needed */
+border: 2px solid #333;
+background-color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>My Awesome Game Site</h1>
+
+<!-- Navigation Buttons -->
+<nav class="game-nav">
+<!-- Data attributes are used to target the correct content section -->
+<a onclick="showPage('home')">Home</a>
+<a onclick="showPage('Red Ball 4')">Red Ball 4 </a>
+<a onclick="showPage('Exit 8')">Exit 8 </a>
+<a onclick="showPage('Happy Wheels')">Happy Wheels </a>
+<a onclick="showPage('pokemon sapphire')">pokemon sapphire</a>
+<a onclick="showPage('')"></a>
+</nav>
+
+<hr>
+
+<!-- Content Sections -->
+
+<!-- 1. Home Page Content -->
+<div id="home" class="content-section">
+<h2>Welcome Home!</h2>
+<p>Select a game from the navigation bar above to start playing.</p>
+</div>
+
+<!-- 2. Game 1 Content -->
+<div id="Red Ball 4" class="content-section">
+<h2>Red Ball 4</h2>
+<!-- Replace 'URL_FOR_GAME_1' with the actual URL -->
+<iframe class="game-iframe" src="https://iframe.unblocked-76-games.org/red-ball-4-main/" title="Game 1 Area" allowfullscreen></iframe>
+</div>
+
+<!-- 3. Game 2 Content -->
+<div id="Exit 8" class="content-section">
+<h2>Exit 8</h2>
+<!-- Replace 'URL_FOR_GAME_2' with the actual URL -->
+<iframe class="game-iframe" src="https://app-278615.games.s3.yandex.net/278615/mxysyobd9u5pbwlo1kpu9vh2l5z02dyh_brotli/index.html?is-united-page=1&skip-guard=1&header=no&clid=10575041&flags=%7B%22adv_sticky_banner_disabled%22%3Atrue%7D&sdk=%2Fsdk%2F_%2Fv2.97c96d6acac215f69e1d.js#origin=https%3A%2F%2Fyandex.com&app-id=278615&device-type=desktop" title="Game 2 Area" allowfullscreen></iframe>
+</div>
+
+
+
+<!-- 3. Game 3 Content -->
+<div id="Happy Wheels" class="content-section">
+<h2>Exit 8</h2>
+<!-- Replace 'URL_FOR_GAME_2' with the actual URL -->
+<iframe class="game-iframe" src="https://cbgamesdev.github.io/chilibowlflash/hw/index.html" title="Game 2 Area" allowfullscreen></iframe>
+</div>
+
+<!-- 3. Game 2 Content -->
+<div id="pokemon sapphire" class="content-section">
+<h2>Exit 8</h2>
+<!-- Replace 'URL_FOR_GAME_2' with the actual URL -->
+<iframe class="game-iframe" src="https://picklekid31.github.io/GBA-unblocked-games/launcher.html#pokemonsapphire" title="Game 2 Area" allowfullscreen></iframe>
+</div>
+<!-- 3. Game 2 Content -->
+<div id="pokemon sapphire" class="content-section">
+<h2>Exit 8</h2>
+<!-- Replace 'URL_FOR_GAME_2' with the actual URL -->
+<iframe class="game-iframe" src="" title="Game 2 Area" allowfullscreen></iframe>
+</div>
+
+<!-- 4. Example Other Page -->
+<div id="about-page" class="content-section">
+<h2>About This Site</h2>
+<p>This is a simple game collection built with HTML and JavaScript.</p>
+</div>
+
+</div>
+
+<script>
+// JavaScript function to show the selected page and hide others
+function showPage(pageId) {
+// Hide all sections
+var sections = document.getElementsByClassName('content-section');
+for (var i = 0; i < sections.length; i++) {
+sections[i].style.display = 'none';
+}
+
+// Show the requested section
+var activePage = document.getElementById(pageId);
+if (activePage) {
+activePage.style.display = 'block';
+}
+}
+
+// Initialize: Show the home page when the site first loads
+document.addEventListener('DOMContentLoaded', (event) => {
+showPage('home');
+});
+</script>
+</body>
+</html>
